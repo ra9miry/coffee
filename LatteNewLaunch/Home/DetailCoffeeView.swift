@@ -184,7 +184,7 @@
             nameLabel.text = coffeeData.name
             ratingLabel.text = String(format: "%.1f", coffeeData.rating)
             descriptionLabel.text = coffeeData.description
-            updatePrice(for: "M") // Установите цену по умолчанию для размера M
+            updatePrice(for: "M")
             coffeeImageView.image = UIImage(named: coffeeData.imageName.rawValue)
         }
 
@@ -212,25 +212,10 @@
             backButtonCustomView.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
             let backButton = UIBarButtonItem(customView: backButtonCustomView)
             self.navigationItem.leftBarButtonItem = backButton
-            let heartButtonImage = AppImage.fav.uiImage?.withRenderingMode(.alwaysOriginal)
-            let heartButtonCustomView = UIButton(type: .custom)
-            heartButtonCustomView.setImage(heartButtonImage, for: .normal)
-            heartButtonCustomView.addTarget(self, action: #selector(favouriteButtonTapped), for: .touchUpInside)
-            heartButtonCustomView.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 20)
-            let heartButton = UIBarButtonItem(customView: heartButtonCustomView)
-            self.navigationItem.rightBarButtonItem = heartButton
         }
         
         @objc private func backButtonTapped() {
-            let controller = TabBarViewController()
-            self.navigationController?.pushViewController(controller, animated: true)
-        }
-        
-        @objc private func favouriteButtonTapped() {
-            if let tabBarVC = self.view.window?.rootViewController as? TabBarViewController {
-                tabBarVC.selectedIndex = 1 
-                self.navigationController?.popToRootViewController(animated: true)
-            }
+            self.navigationController?.popViewController(animated: true)
         }
         
         // MARK: - Setup Views

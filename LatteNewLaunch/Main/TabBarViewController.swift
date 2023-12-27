@@ -37,9 +37,12 @@ class TabBarViewController: UITabBarController {
             generateViewController(viewController: CartViewController(), title: "", image: AppImage.bag.uiImage),
             generateViewController(viewController: DeliveryViewController(), title: "", image: AppImage.notf.uiImage)
         ]
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        tabBar.items?.forEach { item in
+            item.title = "" 
+        }
         tabBar.backgroundColor = UIColor(named: "tabbar")
     }
+
     
     private func generateViewController(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title

@@ -80,13 +80,12 @@
 		5144D29D2B3493000058B2FE /* LatteNewLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				519D9E3F2B3C942500472DE8 /* Main */,
 				5144D2D62B3710C50058B2FE /* Home */,
+				519D9E412B3C94D500472DE8 /* Cart */,
+				519D9E402B3C94B900472DE8 /* Delivery */,
 				5144D2B42B3493710058B2FE /* Delegate */,
 				5144D2BA2B3494BF0058B2FE /* Assets */,
-				5144D2B22B3493560058B2FE /* OnboardingViewController.swift */,
-				5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */,
-				5144D2CC2B34AA960058B2FE /* CartViewController.swift */,
-				5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */,
 				5144D2A42B3493000058B2FE /* Main.storyboard */,
 				5144D2A92B3493030058B2FE /* LaunchScreen.storyboard */,
 				5144D2AC2B3493030058B2FE /* Info.plist */,
@@ -123,6 +122,31 @@
 				519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		519D9E3F2B3C942500472DE8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */,
+				5144D2B22B3493560058B2FE /* OnboardingViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		519D9E402B3C94B900472DE8 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		519D9E412B3C94D500472DE8 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2CC2B34AA960058B2FE /* CartViewController.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
