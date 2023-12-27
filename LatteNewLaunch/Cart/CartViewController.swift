@@ -96,7 +96,7 @@ class CartViewController: UIViewController {
         let label = UILabel()
         label.text = "1200 ₸"
         label.textColor = AppColor.black.uiColor
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .right
         return label
     }()
@@ -117,6 +117,7 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = AppColor.white.uiColor
+        NotificationCenter.default.addObserver(self, selector: #selector(cartUpdated), name: NSNotification.Name("CartUpdated"), object: nil)
         
         setupNavigationBar()
         setupViews()
@@ -198,6 +199,7 @@ class CartViewController: UIViewController {
         coffeeImageView.snp.makeConstraints() { make in
             make.top.equalTo(littleLineView.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(30)
+            make.size.equalTo(54)
         }
         nameLabel.snp.makeConstraints() { make in
             make.top.equalTo(littleLineView.snp.bottom).offset(37)
