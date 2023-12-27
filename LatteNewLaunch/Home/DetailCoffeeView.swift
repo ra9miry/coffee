@@ -232,7 +232,6 @@
                 self.navigationController?.popToRootViewController(animated: true)
             }
         }
-
         
         // MARK: - Setup Views
         

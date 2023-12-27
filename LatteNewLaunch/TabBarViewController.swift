@@ -34,7 +34,6 @@ class TabBarViewController: UITabBarController {
     private func setupTabBar() {
         viewControllers = [
             generateViewController(viewController: HomeViewController(), title: "", image: AppImage.home.uiImage),
-            generateViewController(viewController: FavouriteViewController(), title: "", image: AppImage.heart.uiImage),
             generateViewController(viewController: CartViewController(), title: "", image: AppImage.bag.uiImage),
             generateViewController(viewController: DeliveryViewController(), title: "", image: AppImage.notf.uiImage)
         ]

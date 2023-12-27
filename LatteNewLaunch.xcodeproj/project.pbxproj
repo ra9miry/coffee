@@ -20,13 +20,11 @@
 		5144D2C52B3495420058B2FE /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C42B3495420058B2FE /* AppImage.swift */; };
 		5144D2C72B34A5AC0058B2FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */; };
 		5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */; };
-		5144D2CB2B34AA800058B2FE /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */; };
 		5144D2CD2B34AA960058B2FE /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CC2B34AA960058B2FE /* CartViewController.swift */; };
 		5144D2CF2B34AAA90058B2FE /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */; };
 		5144D2D32B3710840058B2FE /* coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D22B3710840058B2FE /* coffee.swift */; };
 		5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */; };
 		519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */; };
-		519D9E3B2B3C0E9D00472DE8 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +41,11 @@
 		5144D2C42B3495420058B2FE /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		5144D2CC2B34AA960058B2FE /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
 		5144D2D22B3710840058B2FE /* coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee.swift; sourceTree = "<group>"; };
 		5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeView.swift; sourceTree = "<group>"; };
-		519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +85,6 @@
 				5144D2BA2B3494BF0058B2FE /* Assets */,
 				5144D2B22B3493560058B2FE /* OnboardingViewController.swift */,
 				5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */,
-				5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */,
-				519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */,
 				5144D2CC2B34AA960058B2FE /* CartViewController.swift */,
 				5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */,
 				5144D2A42B3493000058B2FE /* Main.storyboard */,
@@ -211,14 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5144D29F2B3493000058B2FE /* AppDelegate.swift in Sources */,
-				519D9E3B2B3C0E9D00472DE8 /* FavTableViewCell.swift in Sources */,
 				519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */,
 				5144D2C32B3495390058B2FE /* AppColor.swift in Sources */,
 				5144D2CF2B34AAA90058B2FE /* DeliveryViewController.swift in Sources */,
 				5144D2B32B3493560058B2FE /* OnboardingViewController.swift in Sources */,
 				5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */,
 				5144D2A12B3493000058B2FE /* SceneDelegate.swift in Sources */,
-				5144D2CB2B34AA800058B2FE /* FavouriteViewController.swift in Sources */,
 				5144D2D32B3710840058B2FE /* coffee.swift in Sources */,
 				5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */,
 				5144D2C52B3495420058B2FE /* AppImage.swift in Sources */,
