@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		5144D29F2B3493000058B2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D29E2B3493000058B2FE /* AppDelegate.swift */; };
 		5144D2A12B3493000058B2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2A02B3493000058B2FE /* SceneDelegate.swift */; };
-		5144D2A32B3493000058B2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2A22B3493000058B2FE /* ViewController.swift */; };
 		5144D2A62B3493000058B2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2A42B3493000058B2FE /* Main.storyboard */; };
-		5144D2A82B3493030058B2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2A72B3493030058B2FE /* Assets.xcassets */; };
 		5144D2AB2B3493030058B2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2A92B3493030058B2FE /* LaunchScreen.storyboard */; };
+		5144D2B32B3493560058B2FE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2B22B3493560058B2FE /* OnboardingViewController.swift */; };
+		5144D2B72B3493920058B2FE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5144D2B62B3493920058B2FE /* SnapKit */; };
+		5144D2B92B3493920058B2FE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5144D2B82B3493920058B2FE /* SnapKit-Dynamic */; };
+		5144D2BD2B3494F80058B2FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2BC2B3494F80058B2FE /* Color.xcassets */; };
+		5144D2C12B3495190058B2FE /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2C02B3495190058B2FE /* Image.xcassets */; };
+		5144D2C32B3495390058B2FE /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C22B3495390058B2FE /* AppColor.swift */; };
+		5144D2C52B3495420058B2FE /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C42B3495420058B2FE /* AppImage.swift */; };
+		5144D2C72B34A5AC0058B2FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */; };
+		5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */; };
+		5144D2CB2B34AA800058B2FE /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */; };
+		5144D2CD2B34AA960058B2FE /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CC2B34AA960058B2FE /* CartViewController.swift */; };
+		5144D2CF2B34AAA90058B2FE /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */; };
+		5144D2D32B3710840058B2FE /* coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D22B3710840058B2FE /* coffee.swift */; };
+		5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */; };
+		519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */; };
+		519D9E3B2B3C0E9D00472DE8 /* FavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5144D29B2B3493000058B2FE /* LatteNewLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatteNewLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5144D29E2B3493000058B2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5144D2A02B3493000058B2FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5144D2A22B3493000058B2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5144D2A52B3493000058B2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5144D2A72B3493030058B2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5144D2AA2B3493030058B2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5144D2AC2B3493030058B2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5144D2B22B3493560058B2FE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5144D2BC2B3494F80058B2FE /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		5144D2C02B3495190058B2FE /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		5144D2C22B3495390058B2FE /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		5144D2C42B3495420058B2FE /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		5144D2CC2B34AA960058B2FE /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		5144D2D22B3710840058B2FE /* coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee.swift; sourceTree = "<group>"; };
+		5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeView.swift; sourceTree = "<group>"; };
+		519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5144D2B72B3493920058B2FE /* SnapKit in Frameworks */,
+				5144D2B92B3493920058B2FE /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +84,51 @@
 		5144D29D2B3493000058B2FE /* LatteNewLaunch */ = {
 			isa = PBXGroup;
 			children = (
-				5144D29E2B3493000058B2FE /* AppDelegate.swift */,
-				5144D2A02B3493000058B2FE /* SceneDelegate.swift */,
-				5144D2A22B3493000058B2FE /* ViewController.swift */,
+				5144D2D62B3710C50058B2FE /* Home */,
+				5144D2B42B3493710058B2FE /* Delegate */,
+				5144D2BA2B3494BF0058B2FE /* Assets */,
+				5144D2B22B3493560058B2FE /* OnboardingViewController.swift */,
+				5144D2C82B34A85B0058B2FE /* TabBarViewController.swift */,
+				5144D2CA2B34AA800058B2FE /* FavouriteViewController.swift */,
+				519D9E3A2B3C0E9D00472DE8 /* FavTableViewCell.swift */,
+				5144D2CC2B34AA960058B2FE /* CartViewController.swift */,
+				5144D2CE2B34AAA90058B2FE /* DeliveryViewController.swift */,
 				5144D2A42B3493000058B2FE /* Main.storyboard */,
-				5144D2A72B3493030058B2FE /* Assets.xcassets */,
 				5144D2A92B3493030058B2FE /* LaunchScreen.storyboard */,
 				5144D2AC2B3493030058B2FE /* Info.plist */,
 			);
 			path = LatteNewLaunch;
+			sourceTree = "<group>";
+		};
+		5144D2B42B3493710058B2FE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5144D29E2B3493000058B2FE /* AppDelegate.swift */,
+				5144D2A02B3493000058B2FE /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		5144D2BA2B3494BF0058B2FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2BC2B3494F80058B2FE /* Color.xcassets */,
+				5144D2C02B3495190058B2FE /* Image.xcassets */,
+				5144D2C22B3495390058B2FE /* AppColor.swift */,
+				5144D2C42B3495420058B2FE /* AppImage.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5144D2D62B3710C50058B2FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */,
+				5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */,
+				5144D2D22B3710840058B2FE /* coffee.swift */,
+				519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +147,10 @@
 			dependencies = (
 			);
 			name = LatteNewLaunch;
+			packageProductDependencies = (
+				5144D2B62B3493920058B2FE /* SnapKit */,
+				5144D2B82B3493920058B2FE /* SnapKit-Dynamic */,
+			);
 			productName = LatteNewLaunch;
 			productReference = 5144D29B2B3493000058B2FE /* LatteNewLaunch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 5144D2922B3493000058B2FE;
+			packageReferences = (
+				5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5144D29C2B3493000058B2FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +197,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5144D2AB2B3493030058B2FE /* LaunchScreen.storyboard in Resources */,
-				5144D2A82B3493030058B2FE /* Assets.xcassets in Resources */,
+				5144D2C12B3495190058B2FE /* Image.xcassets in Resources */,
 				5144D2A62B3493000058B2FE /* Main.storyboard in Resources */,
+				5144D2BD2B3494F80058B2FE /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +210,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5144D2A32B3493000058B2FE /* ViewController.swift in Sources */,
 				5144D29F2B3493000058B2FE /* AppDelegate.swift in Sources */,
+				519D9E3B2B3C0E9D00472DE8 /* FavTableViewCell.swift in Sources */,
+				519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */,
+				5144D2C32B3495390058B2FE /* AppColor.swift in Sources */,
+				5144D2CF2B34AAA90058B2FE /* DeliveryViewController.swift in Sources */,
+				5144D2B32B3493560058B2FE /* OnboardingViewController.swift in Sources */,
+				5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */,
 				5144D2A12B3493000058B2FE /* SceneDelegate.swift in Sources */,
+				5144D2CB2B34AA800058B2FE /* FavouriteViewController.swift in Sources */,
+				5144D2D32B3710840058B2FE /* coffee.swift in Sources */,
+				5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */,
+				5144D2C52B3495420058B2FE /* AppImage.swift in Sources */,
+				5144D2CD2B34AA960058B2FE /* CartViewController.swift in Sources */,
+				5144D2C72B34A5AC0058B2FE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +446,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5144D2B62B3493920058B2FE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5144D2B82B3493920058B2FE /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5144D2932B3493000058B2FE /* Project object */;
 }
