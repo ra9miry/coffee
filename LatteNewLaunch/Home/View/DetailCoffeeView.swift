@@ -8,6 +8,10 @@
     import UIKit
     import SnapKit
 
+protocol DetailCoffeeViewDelegate: AnyObject {
+    func didBuyCoffee(coffeeData: CoffeeData)
+}
+
     class DetailCoffeeView: UIViewController {
         
         // MARK: - UI
@@ -17,6 +21,9 @@
                 populateData()
             }
         }
+        
+        weak var delegate: DetailCoffeeViewDelegate?
+        var onCoffeeSelected: ((CoffeeData) -> Void)?
         
         private lazy var coffeeImageView: UIImageView = {
             let imageView = UIImageView()
@@ -175,8 +182,49 @@
         }
         
         @objc private func buyButtonTapped() {
-            let controller = CartViewController()
-            self.navigationController?.pushViewController(controller, animated: true)
+            guard let coffeeData = selectedCoffee else { return }
+            
+            if let cartVC = self.navigationController?.viewControllers.first(where: { $0 is CartViewController }) as? CartViewController {
+                cartVC.coffeeData = coffeeData
+                self.navigationController?.popToViewController(cartVC, animated: true)
+            } else {
+                let newCartVC = CartViewController()
+                newCartVC.coffeeData = coffeeData
+                self.navigationController?.pushViewController(newCartVC, animated: true)
+            }
+        }
+        
+        func presentDetailCoffeeView(with coffeeData: CoffeeData) {
+            let detailCoffeeView = DetailCoffeeView()
+            detailCoffeeView.selectedCoffee = coffeeData
+            detailCoffeeView.onCoffeeSelected = { [weak self] selectedCoffeeData in
+                guard let strongSelf = self else { return }
+                let cartVC = CartViewController()
+                cartVC.updateUIWithCoffeeData(selectedCoffeeData)
+                strongSelf.navigationController?.pushViewController(cartVC, animated: true)
+            }
+            navigationController?.pushViewController(detailCoffeeView, animated: true)
+        }
+
+        func showDetailCoffeeView(with coffeeData: CoffeeData) {
+            let detailCoffeeView = DetailCoffeeView()
+            detailCoffeeView.selectedCoffee = coffeeData
+            detailCoffeeView.onCoffeeSelected = { [weak self] selectedCoffeeData in
+                if let cartVC = self?.navigationController?.viewControllers.first(where: { $0 is CartViewController }) as? CartViewController {
+                    cartVC.updateUIWithCoffeeData(selectedCoffeeData)
+                } else {
+                    let newCartVC = CartViewController()
+                    newCartVC.updateUIWithCoffeeData(selectedCoffeeData)
+                    self?.navigationController?.pushViewController(newCartVC, animated: true)
+                }
+            }
+            navigationController?.pushViewController(detailCoffeeView, animated: true)
+        }
+
+        private func showCartViewController(with coffeeData: CoffeeData) {
+            let cartVC = CartViewController()
+            cartVC.updateUIWithCoffeeData(coffeeData)
+            navigationController?.pushViewController(cartVC, animated: true)
         }
 
         private func populateData() {

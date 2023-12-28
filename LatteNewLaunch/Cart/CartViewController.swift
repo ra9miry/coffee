@@ -10,6 +10,10 @@ import SnapKit
 
 class CartViewController: UIViewController {
     
+    var coffeeData: CoffeeData?
+    
+    // MARK: - UI
+    
     private lazy var deliverButton: UIButton = {
         let button = UIButton()
         button.setTitle("Deliver", for: .normal)
@@ -30,7 +34,7 @@ class CartViewController: UIViewController {
     
     private lazy var addresLabel: UILabel = {
         let label = UILabel()
-        label.text = "Jl. Kpg Sutoyo"
+        label.text = "Almaty, Kazakhstan"
         label.font = UIFont.boldSystemFont(ofSize: 14)
         label.textAlignment = .left
         return label
@@ -38,7 +42,7 @@ class CartViewController: UIViewController {
     
     private lazy var secondAddresLabel: UILabel = {
         let label = UILabel()
-        label.text = "Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai."
+        label.text = "Almaty, Abay 52B"
         label.textColor = AppColor.lightGray.uiColor
         label.font = UIFont.systemFont(ofSize: 12)
         label.textAlignment = .left
@@ -63,7 +67,7 @@ class CartViewController: UIViewController {
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Cappucino"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .left
         return label
     }()
@@ -95,7 +99,7 @@ class CartViewController: UIViewController {
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.text = "1200 ₸"
-        label.textColor = AppColor.black.uiColor
+        label.textColor = AppColor.orange.uiColor
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .right
         return label
@@ -117,11 +121,20 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = AppColor.white.uiColor
-        NotificationCenter.default.addObserver(self, selector: #selector(cartUpdated), name: NSNotification.Name("CartUpdated"), object: nil)
         
         setupNavigationBar()
         setupViews()
         setupConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let coffeeData = self.coffeeData {
+            updateUIWithCoffeeData(coffeeData)
+        } else {
+            setDefaultValues()
+        }
     }
     
     // MARK: - Action
@@ -129,6 +142,19 @@ class CartViewController: UIViewController {
     @objc private func orderButtonTapped() {
         let controller = DeliveryViewController()
         self.navigationController?.pushViewController(controller, animated: true)
+    }
+
+    private func setDefaultValues() {
+        nameLabel.isHidden = true
+        priceLabel.text = "0 ₸"
+        coffeeImageView.image = AppImage.def.uiImage
+    }
+
+    func updateUIWithCoffeeData(_ coffeeData: CoffeeData) {
+        nameLabel.isHidden = false 
+        nameLabel.text = coffeeData.name
+        priceLabel.text = "\(coffeeData.priceM) ₸"
+        coffeeImageView.image = coffeeData.imageName.uiImage
     }
     
     // MARK: - Setup Navigation Bar
@@ -199,17 +225,18 @@ class CartViewController: UIViewController {
         coffeeImageView.snp.makeConstraints() { make in
             make.top.equalTo(littleLineView.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(30)
-            make.size.equalTo(54)
+            make.height.equalTo(54)
+            make.width.equalTo(76)
         }
         nameLabel.snp.makeConstraints() { make in
             make.top.equalTo(littleLineView.snp.bottom).offset(37)
             make.leading.equalTo(coffeeImageView.snp.trailing).offset(12)
         }
         bigLineView.snp.makeConstraints() { make in
-            make.top.equalTo(nameLabel.snp.bottom).offset(30)
+            make.top.equalTo(coffeeImageView.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(30)
             make.trailing.equalToSuperview().offset(-30)
-            make.height.equalTo(2.5)
+            make.height.equalTo(1.5)
         }
         paymentLabel.snp.makeConstraints() { make in
             make.top.equalTo(bigLineView.snp.bottom).offset(30)

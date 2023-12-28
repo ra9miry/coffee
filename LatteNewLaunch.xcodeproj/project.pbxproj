@@ -25,6 +25,7 @@
 		5144D2D32B3710840058B2FE /* coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D22B3710840058B2FE /* coffee.swift */; };
 		5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */; };
 		519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */; };
+		519D9E482B3D5A3900472DE8 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E472B3D5A3900472DE8 /* Coffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5144D2D22B3710840058B2FE /* coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee.swift; sourceTree = "<group>"; };
 		5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeView.swift; sourceTree = "<group>"; };
+		519D9E472B3D5A3900472DE8 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +118,9 @@
 		5144D2D62B3710C50058B2FE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */,
-				5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */,
-				5144D2D22B3710840058B2FE /* coffee.swift */,
-				519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */,
+				519D9E442B3D59E400472DE8 /* Model */,
+				519D9E452B3D59EE00472DE8 /* View */,
+				519D9E462B3D59F800472DE8 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -147,6 +148,32 @@
 				5144D2CC2B34AA960058B2FE /* CartViewController.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		519D9E442B3D59E400472DE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2D22B3710840058B2FE /* coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		519D9E452B3D59EE00472DE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5144D2C62B34A5AC0058B2FE /* HomeViewController.swift */,
+				5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */,
+				519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		519D9E462B3D59F800472DE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				519D9E472B3D5A3900472DE8 /* Coffee.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +265,7 @@
 				5144D2D32B3710840058B2FE /* coffee.swift in Sources */,
 				5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */,
 				5144D2C52B3495420058B2FE /* AppImage.swift in Sources */,
+				519D9E482B3D5A3900472DE8 /* Coffee.swift in Sources */,
 				5144D2CD2B34AA960058B2FE /* CartViewController.swift in Sources */,
 				5144D2C72B34A5AC0058B2FE /* HomeViewController.swift in Sources */,
 			);

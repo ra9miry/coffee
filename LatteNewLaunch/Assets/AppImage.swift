@@ -45,6 +45,7 @@ enum AppImage: String, AppImageProtocol {
     case fav
     case back
     case rating
+    case def
     
     // coffee
     
