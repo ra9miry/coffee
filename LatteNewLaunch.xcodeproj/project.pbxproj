@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512EB6442B569B420013D625 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 512EB6432B569B420013D625 /* SnapKit */; };
 		5144D29F2B3493000058B2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D29E2B3493000058B2FE /* AppDelegate.swift */; };
 		5144D2A12B3493000058B2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2A02B3493000058B2FE /* SceneDelegate.swift */; };
 		5144D2A62B3493000058B2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2A42B3493000058B2FE /* Main.storyboard */; };
 		5144D2AB2B3493030058B2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2A92B3493030058B2FE /* LaunchScreen.storyboard */; };
 		5144D2B32B3493560058B2FE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2B22B3493560058B2FE /* OnboardingViewController.swift */; };
 		5144D2B72B3493920058B2FE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5144D2B62B3493920058B2FE /* SnapKit */; };
-		5144D2B92B3493920058B2FE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5144D2B82B3493920058B2FE /* SnapKit-Dynamic */; };
 		5144D2BD2B3494F80058B2FE /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2BC2B3494F80058B2FE /* Color.xcassets */; };
 		5144D2C12B3495190058B2FE /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5144D2C02B3495190058B2FE /* Image.xcassets */; };
 		5144D2C32B3495390058B2FE /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2C22B3495390058B2FE /* AppColor.swift */; };
@@ -55,8 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512EB6442B569B420013D625 /* SnapKit in Frameworks */,
 				5144D2B72B3493920058B2FE /* SnapKit in Frameworks */,
-				5144D2B92B3493920058B2FE /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 			name = LatteNewLaunch;
 			packageProductDependencies = (
 				5144D2B62B3493920058B2FE /* SnapKit */,
-				5144D2B82B3493920058B2FE /* SnapKit-Dynamic */,
+				512EB6432B569B420013D625 /* SnapKit */,
 			);
 			productName = LatteNewLaunch;
 			productReference = 5144D29B2B3493000058B2FE /* LatteNewLaunch.app */;
@@ -503,15 +503,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5144D2B62B3493920058B2FE /* SnapKit */ = {
+		512EB6432B569B420013D625 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		5144D2B82B3493920058B2FE /* SnapKit-Dynamic */ = {
+		5144D2B62B3493920058B2FE /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5144D2B52B3493920058B2FE /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
