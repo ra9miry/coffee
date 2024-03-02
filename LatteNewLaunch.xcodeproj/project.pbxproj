@@ -26,6 +26,7 @@
 		5144D2D52B3710B60058B2FE /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */; };
 		519D9E392B384B1500472DE8 /* DetailCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */; };
 		519D9E482B3D5A3900472DE8 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D9E472B3D5A3900472DE8 /* Coffee.swift */; };
+		51F5868B2B90E9310081999A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5868A2B90E9310081999A /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		5144D2D42B3710B60058B2FE /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		519D9E382B384B1500472DE8 /* DetailCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoffeeView.swift; sourceTree = "<group>"; };
 		519D9E472B3D5A3900472DE8 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		51F5868A2B90E9310081999A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		519D9E462B3D59F800472DE8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				51F5868A2B90E9310081999A /* HomeViewModel.swift */,
 				519D9E472B3D5A3900472DE8 /* Coffee.swift */,
 			);
 			path = ViewModel;
@@ -264,6 +267,7 @@
 				5144D2A12B3493000058B2FE /* SceneDelegate.swift in Sources */,
 				5144D2D32B3710840058B2FE /* coffee.swift in Sources */,
 				5144D2C92B34A85B0058B2FE /* TabBarViewController.swift in Sources */,
+				51F5868B2B90E9310081999A /* HomeViewModel.swift in Sources */,
 				5144D2C52B3495420058B2FE /* AppImage.swift in Sources */,
 				519D9E482B3D5A3900472DE8 /* Coffee.swift in Sources */,
 				5144D2CD2B34AA960058B2FE /* CartViewController.swift in Sources */,
@@ -422,6 +426,7 @@
 				DEVELOPMENT_TEAM = RHRNFDRXGF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LatteNewLaunch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Arabica;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -432,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.LatteNewLaunch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ArabicaRab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,6 +455,7 @@
 				DEVELOPMENT_TEAM = RHRNFDRXGF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LatteNewLaunch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Arabica;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -460,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.LatteNewLaunch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ArabicaRab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

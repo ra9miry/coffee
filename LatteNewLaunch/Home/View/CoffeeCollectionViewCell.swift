@@ -12,6 +12,7 @@ class CoffeeCollectionViewCell: UICollectionViewCell {
     static let identifier = "CoffeeCollectionViewCell"
     
     // MARK: - UI
+    
     private lazy var coffeeView: UIView = {
         let view = UIView()
         view.backgroundColor = AppColor.view.uiColor

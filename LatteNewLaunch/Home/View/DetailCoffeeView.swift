@@ -1,12 +1,12 @@
-    //
-    //  DetailCoffeeView.swift
-    //  LatteNewLaunch
-    //
-    //  Created by Радмир Тельман on 24.12.2023.
-    //
+//
+//  DetailCoffeeView.swift
+//  LatteNewLaunch
+//
+//  Created by Радмир Тельман on 24.12.2023.
+//
 
-    import UIKit
-    import SnapKit
+import UIKit
+import SnapKit
 
 protocol DetailCoffeeViewDelegate: AnyObject {
     func didBuyCoffee(coffeeData: CoffeeData)

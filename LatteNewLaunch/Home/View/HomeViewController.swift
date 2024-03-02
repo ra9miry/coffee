@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 final class HomeViewController: UIViewController, UICollectionViewDelegate {
     
@@ -225,6 +226,7 @@ final class HomeViewController: UIViewController, UICollectionViewDelegate {
 }
 
 // MARK: - UICollectionViewDataSource
+
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return isSearching ? filteredCoffees.count : coffees.count
